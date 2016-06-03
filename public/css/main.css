@@ -1,5 +1,174 @@
-body {
-  background-color: #FF0; }
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pacifico/pacifico.eot");
+  src: url("../fonts/pacifico/pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico/pacifico.woff") format("woff"), url("../fonts/pacifico/pacifico.ttf") format("truetype"), url("../fonts/pacifico/pacifico.svg#pacifico") format("svg"); }
 
-p {
-  color: #FFF; }
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pacifico.eot");
+  src: url("../fonts/pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico.woff") format("woff"), url("../fonts/pacifico.ttf") format("truetype"), url("../fonts/pacifico.svg#pacifico") format("svg"); }
+
+.font-pacifico {
+  font-family: "Pacifico", Verdana, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+@font-face {
+  font-family: 'Sansa Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sansa-pro/sansa-pro.eot");
+  src: url("../fonts/sansa-pro/sansa-pro.eot?#iefix") format("embedded-opentype"), url("../fonts/sansa-pro/sansa-pro.woff") format("woff"), url("../fonts/sansa-pro/sansa-pro.ttf") format("truetype"), url("../fonts/sansa-pro/sansa-pro.svg#sansa-pro") format("svg"); }
+
+.font-sansa-pro {
+  font-family: "Sansa Pro", Verdana, Arial, sans-serif; }
+
+@font-face {
+  font-family: 'Sansa Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/sansa-pro-bold/sansa-pro-bold.eot");
+  src: url("../fonts/sansa-pro-bold/sansa-pro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/sansa-pro-bold/sansa-pro-bold.woff") format("woff"), url("../fonts/sansa-pro-bold/sansa-pro-bold.ttf") format("truetype"), url("../fonts/sansa-pro-bold/sansa-pro-bold.svg#sansa-pro-bold") format("svg"); }
+
+.font-sansa-pro-bold {
+  font-family: "Sansa Pro", Verdana, Arial, sans-serif;
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Fords Folly';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/forsd-folly/fords-folly.eot");
+  src: url("../fonts/forsd-folly/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/forsd-folly/fords-folly.woff2") format("woff2"), url("../fonts/forsd-folly/fords-folly.woff") format("woff"), url("../fonts/forsd-folly/fords-folly.ttf") format("truetype"), url("../fonts/forsd-folly/fords-folly.svg#fordsfolly") format("svg"); }
+
+@font-face {
+  font-family: 'Fords Folly';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/forsd-folly/fords-folly.eot");
+  src: url("../fonts/forsd-folly/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/forsd-folly/fords-folly.woff2") format("woff2"), url("../fonts/forsd-folly/fords-folly.woff") format("woff"), url("../fonts/forsd-folly/fords-folly.ttf") format("truetype"), url("../fonts/forsd-folly/fords-folly.svg#fords-folly") format("svg"); }
+
+.font-fords-folly {
+  font-family: "Fords Folly", Verdana, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  margin: 0; }
+
+body > * {
+  width: 100%; }
+
+body > header {
+  width: 100%; }
+  body > header nav {
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 107px;
+    background: -webkit-linear-gradient(#FFF 0%, #FFF 88%, #ed1c2e 88%, #ed1c2e 90%, #FFF 90%, #FFF 92%, #f99500 92%, #f99500 95%, #FFF 95%, #FFF 97%, #20a0de 97%, #20a0de 100%, #FFF 100%);
+    z-index: 1;
+    position: relative; }
+    body > header nav .logo {
+      width: 90%;
+      height: auto;
+      padding-top: 10px;
+      display: block;
+      position: absolute;
+      left: 5%;
+      bottom: -20px; }
+    body > header nav p {
+      display: none;
+      color: #FFF; }
+    body > header nav ul {
+      display: none; }
+  body > header .main_image {
+    background-image: url("../img/sunweb-wave.svg"), url("../img/header_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom 60px left, top right -20px;
+    background-size: 100% auto, auto 100%;
+    height: 275px;
+    position: relative; }
+    body > header .main_image p {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      background-color: #fbeb2e;
+      color: #333;
+      font-family: "Pacifico", Verdana, Arial, sans-serif;
+      font-size: 22px;
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8);
+      padding-top: 6px;
+      padding-bottom: 15px; }
+
+.main_content {
+  color: #333;
+  text-align: center;
+  width: 100%; }
+  .main_content header > h1 {
+    font-family: "Sansa Pro", Verdana, Arial, sans-serif;
+    font-size: 26px; }
+  .main_content .copy {
+    color: #ed1c2e;
+    font-family: "Sansa Pro", Verdana, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px; }
+  .main_content p {
+    font-size: 12px;
+    padding: 0 15px; }
+  .main_content a {
+    color: #20a0de; }
+  .main_content .button {
+    background-color: #ed1c2e;
+    color: #FFF;
+    padding: 10px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Sansa Pro", Verdana, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 50px auto;
+    display: block;
+    width: 190px; }
+
+footer {
+  background-color: #eeeeee;
+  text-align: center;
+  position: relative;
+  padding-top: 110px; }
+  footer .footer_logo {
+    width: 50%;
+    position: absolute;
+    left: 40px;
+    top: 75px; }
+  footer div {
+    color: #ed1c2e;
+    background-image: url("../img/sunweb-wave.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    padding-top: 10px; }
+    footer div p {
+      margin: 0px;
+      background-color: #fbeb2e;
+      font-family: "Fords Folly", Verdana, Arial, sans-serif;
+      font-size: 16px;
+      padding: 0px 25px; }
+  footer ul {
+    background-color: #fbeb2e;
+    margin: 0;
+    padding: 30px 0 30px 0;
+    list-style: none; }
+    footer ul li {
+      height: 25px; }
+      footer ul li a {
+        font-size: 12px;
+        color: #333;
+        text-decoration: none; }
