@@ -1,0 +1,27 @@
+{
+  "name": "sunweb",
+  "version": "1.0.0",
+  "description": "Simple page test",
+  "main": "index.html",
+  "dependencies": {
+    "sass": "^0.5.0",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvfaltran/sunweb.git"
+  },
+  "author": "Brais Vazquez Farre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bvfaltran/sunweb/issues"
+  },
+  "homepage": "https://github.com/bvfaltran/sunweb#readme"
+}
