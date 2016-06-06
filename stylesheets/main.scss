@@ -358,12 +358,14 @@ footer{
     @media screen and (min-width: $tablet){
       display: inline-block;
     }
-    header{
+    .header{
       font-family: $font-sansa-pro-bold;
       font-size: $smaller-font-size;
       color: $black;
       margin-bottom: 15px;
       text-transform: uppercase;
+      display: block;
+      width: 100%;
       @media screen and (min-width: $tablet){
         font-weight: 700;
       }

@@ -436,14 +436,16 @@ footer {
   @media screen and (min-width: 480px) {
     footer article {
       display: inline-block; } }
-  footer article header {
+  footer article .header {
     font-family: "Sansa Pro Bold", Verdana, Arial, sans-serif;
     font-size: 0.91em;
     color: #333;
     margin-bottom: 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    display: block;
+    width: 100%; }
     @media screen and (min-width: 480px) {
-      footer article header {
+      footer article .header {
         font-weight: 700; } }
   footer article ul {
     background-color: #fbeb2e;
