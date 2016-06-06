@@ -3,11 +3,11 @@
   font-style: normal;
   font-weight: normal;
 
-  src: url('#{$path-fonts}sunweb-icons.eot?-nhl0i');
-  src: url('#{$path-fonts}sunweb-icons.eot?#iefix-nhl0i') format('embedded-opentype'),
-  url('#{$path-fonts}sunweb-icons.ttf?-nhl0i') format('truetype'),
-  url('#{$path-fonts}sunweb-icons.woff?-nhl0i') format('woff'),
-  url('#{$path-fonts}sunweb-icons.svg?-nhl0i#sunweb-icons') format('svg');
+  src: url('#{$path-fonts}/sunweb-icons/fonts/sunweb-icons.eot?-nhl0i');
+  src: url('#{$path-fonts}/sunweb-icons/fonts/sunweb-icons.eot?#iefix-nhl0i') format('embedded-opentype'),
+  url('#{$path-fonts}/sunweb-icons/fonts/sunweb-icons.ttf?-nhl0i') format('truetype'),
+  url('#{$path-fonts}/sunweb-icons/fonts/sunweb-icons.woff?-nhl0i') format('woff'),
+  url('#{$path-fonts}/sunweb-icons/fonts/sunweb-icons.svg?-nhl0i#sunweb-icons') format('svg');
   }
 
 .icon {

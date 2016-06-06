@@ -11,12 +11,35 @@ $yellow: #fbeb2e;
 @import '../public/fonts/sansa-pro/sansa-pro.scss';// $font-sansa-pro
 @import '../public/fonts/sansa-pro-bold/sansa-pro-bold.scss';// $font-sansa-pro
 @import '../public/fonts/forsd-folly/fords-folly.scss';//  $font-fords-folly
+@import '../public/fonts/sunweb-icons/scss/sunweb-icons.scss';//  $ICONS
+
+$tablet: 480px;
+$desktop: 960px;
+
+$smaller-font-size: 0.91em;
+$regular-font-size: 1em;
+$bigger-font-size: 1.08em;
+$biggest-font-size: 1.33em;
+
+$subtitle-font-size: 1.50em;
+$title-font-size: 1.83em;
+$header-font-size: 2.16em;
+$uverbig-font-size: 3.5em;
+
 
 body{
   margin: 0;
+  font-size: 12px;
+  @media screen and (min-width: $tablet){
+    font-size: 14px;
+  }
+  @media (min-width:$desktop){
+    background-color: $gray;
+    font-size: 16px;
 }
 
 //GENERAL WRAPPERS
+}
 body > * {
   width: 100%;
 }
@@ -24,36 +47,101 @@ body > * {
 //MAIN HEADER
 body > header{
   width: 100%;
+  @media (min-width:$desktop){
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: $white;
+  }
   & nav{
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
     height: 107px;
     background:-webkit-linear-gradient(#FFF 0%, $white 88%, $red 88%, $red 90%, $white 90%, $white 92%, $orange 92%, $orange 95%, $white 95%, $white 97%, $blue 97%, $blue 100%, $white 100%);
     z-index: 1;
     position: relative;
+    @media (min-width:$desktop){
+        height: 87px;
+    }
     .logo {
-      width: 90%;
+      /*width: 90%;
       height: auto;
-      padding-top: 10px;
       display: block;
       position: absolute;
       left: 5%;
-      bottom: -20px;
+      bottom: -20px;*/
+
+      max-width: 300px;
+      margin: 0 auto;
+      display: block;
+      padding: 0;
+      margin-top: 20px;
+      position: relative;
+      width: auto;
+      max-height: 75px;
+      left: auto;
+      padding-top: 50px;
+      @media (min-width:$tablet){
+        width: 240px;
+      }
+      @media (min-width:$desktop){
+        width: 240px;
+        margin: 0 0 0 30px;
+        display:inline-block;
+        padding-top: 35px;
+        padding-left: 10px;
+        vertical-align: top;
+      }
     }
     p{
       display: none;
       color: $white;
+      @media (min-width:$desktop){
+          display: inline-block;
+          color: $red;
+          padding-left: 330px;
+          padding-top: 30px;
+      }
     }
     ul{
+      float: right;
       display: none;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      @media (min-width:$desktop){
+        display: block;
+      }
+      li{
+        display: inline-block;
+        padding-top: 35px;
+      }
     }
   }
   .main_image{
-    background-image:  url('../img/sunweb-wave.svg'), url('../img/header_mobile.jpg'),;
+    background-image:  url('../img/sunweb-wave.svg'), url('../img/header_mobile.jpg');
     background-repeat: no-repeat;
     background-position: bottom 60px left, top right -20px;
     background-size: 100% auto, auto 100%;
     height: 275px;
     position: relative;
+    @media (min-width:450px) and (max-width:$tablet){
+      background-position: bottom 60px left, top right;
+      background-size: 100% auto, 100% auto;
+    }
+    @media (min-width:$tablet){
+        background-image:  url('../img/sunweb-wave-tab.svg'), url('../img/header_tablet.jpg');
+        background-position: bottom 0px left, top -25px center;
+        background-size: 100% auto, auto 100%;
+        height: 384px;
+    }
+    @media (min-width:800px) and (max-width:$desktop){
+      background-position: bottom 0px left, bottom 30px right;
+      background-size: 100% auto, 100% auto;
+    }
+    @media (min-width:$desktop){
+      height: 425px;
+      background-image:  url('../img/summer-wave-desktop.svg'), url('../img/header_desktop.jpg');
+      background-size:  100% 20%  , auto 100%;
+    }
     p{
       display: block;
       position: absolute;
@@ -64,10 +152,28 @@ body > header{
       background-color: $yellow;
       color: $black;
       font-family: $font-pacifico;
-      font-size: 22px;
+      font-size: $title-font-size;
       text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8);
       padding-top: 6px;
       padding-bottom: 15px;
+      @media screen and (min-width:$tablet){
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        background-color: initial;
+        font-size: $uverbig-font-size;
+        width: 350px;
+        text-align: right;
+        line-height: 130%;
+        text-shadow: none;
+        & > span{
+          margin-left:110px;
+          display: inline-block;
+        }
+      }
+      @media screen and (min-width:$desktop){
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8);
+      }
     }
   }
 }
@@ -77,19 +183,35 @@ body > header{
   color: $black;
   text-align: center;
   width: 100%;
+  @media (min-width:$desktop){
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: $white;
+    padding-bottom: 30px;
+  }
   header > h1{
     font-family: $font-sansa-pro;
-    font-size: 26px;
+    font-size: $header-font-size;
+    margin-top: 20px;
+    @media (min-width:$desktop){
+      padding-top: 30px;
+    }
   }
   .copy{
     color: $red;
     font-family: $font-sansa-pro;
     font-weight: 700;
-    font-size: 18px;
+    font-size: $subtitle-font-size;
   }
   p{
-    font-size: 12px;
+    font-size: $biggest-font-size;
     padding: 0 15px;
+    line-height: 150%;
+    @media (min-width:$desktop){
+      padding: 0px 25px;
+      max-width: 965px;
+      margin: 0 auto 20px auto;
+    }
   }
   a{
     color: $blue;
@@ -97,16 +219,16 @@ body > header{
   .button{
     background-color: $red;
     color: $white;
-    padding: 10px 0px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-transform: uppercase;
     text-decoration: none;
     font-family: $font-sansa-pro;
     font-weight: 700;
-    font-size: 13px;
+    font-size: $bigger-font-size;
     margin: 50px auto;
     display: block;
     width: 190px;
+    padding: 10px 15px;
   }
 }
 
@@ -115,14 +237,26 @@ footer{
   background-color: $gray;
   text-align: center;
   position: relative;
-  padding-top: 110px;
+  padding-top: 170px;
+  @media (min-width:$tablet){
+    text-align: left;
+  }
+  @media (min-width:$desktop){
+    padding-top: 170px;
+  }
   .footer_logo{
-    width:: 50%;
+    width: 50%;
     position: absolute;
     left: 40px;
     top: 75px;
+    @media (min-width:$tablet){
+      width: 175px;
+      top: 110px;
+    }
+    @media (min-width:$desktop){
+    }
   }
-  div{
+  .weave{
     color: $red;
     background-image:  url('../img/sunweb-wave.svg');
     background-size: 100%;
@@ -130,26 +264,138 @@ footer{
     display: block;
     width: 100%;
     padding-top: 10px;
+    height: auto;
+    margin-top: -70px;
+
+    @media (min-width:$tablet){
+      height: 75px;
+      margin-top: -100px;
+      background-position: bottom center;
+    }
+    @media (min-width:$tablet){
+      margin-top: -110px;
     p{
       margin: 0px;
       background-color: $yellow;
       font-family: $font-fords-folly;
-      font-size: 16px;
-      padding: 0px 25px;
+      font-size: $title-font-size;
+      padding: 20px 30px 20px 30px;
+      @media screen and (min-width: $tablet){
+        background-color: initial;
+        padding: 20px 15px 20px 15px;
+        margin-top: -110px;
+      }
+      @media screen and (min-width: 750px) {
+        margin-top: -15px;
+        padding-left: 30%;
+      }
+      //  @media screen and (min-width: $tablet){
+      @media screen and (min-width: $desktop){
+        margin-top: -25px;
+      }
+    }
+    @media screen and (min-width: $desktop){
+      margin-top: -80px;
     }
   }
-  ul{
+  .columns_wrapper{
+    width: 100%;
     background-color: $yellow;
-    margin: 0;
-    padding: 30px 0 30px 0;
-    list-style: none;
-    li{
-      height: 25px;
-      a{
-        font-size: 12px;
-        color: $black;
-        text-decoration: none;
+    padding-top: 25px;
+  }
+  .columns_inner_wrapper{
+    position: relative;
+    @media (min-width:$tablet){
+      padding-top: 30px;
+    }
+    @media (min-width:$desktop){
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+  .column{
+    display: inline-block;
+    width: 100%;
+    @media screen and (min-width: $tablet){
+      width: 24%;
+      padding: 0 4%;
+      vertical-align: top;
+    }
+  }
+  .col_a{
+    @media screen and (min-width: $tablet){
+      width: 16%;
+    }
+  }
+  .col_b{
+    width: 100%;
+      @media screen and (min-width: $tablet){
+        width: 20%;
       }
+  }
+  .col_c{
+    width: 35%;
+  }
+  article{
+    @media screen and (min-width: $tablet){
+      display: inline-block;
+    }
+    header{
+      font-family: $font-sansa-pro;
+      font-size: $smaller-font-size;
+      color: $black;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      @media screen and (min-width: $tablet){
+        font-weight: 700;
+      }
+    }
+    ul{
+      background-color: $yellow;
+      margin: 0;
+      padding: 0px 0 30px 0;
+      list-style: none;
+      li{
+        height: 25px;
+        a{
+          color: $black;
+          text-decoration: none;
+        }
+      }
+      @media screen and (min-width: $tablet){
+        padding: 0px 0px 30px 0px;
+      }
+    }
+  }
+  .footer_menu{
+    width: 100%;
+  }
+  .vacaciones_mar{
+    width: 100%;
+  }
+  .vacaciones_rutas{
+    display: none;
+    @media screen and (min-width: $tablet){
+      display: inline-block;
+    }
+  }
+  .social{
+    margin-bottom: 30px;
+    a{
+      color: $black;
+      text-decoration: none;
+    }
+  }
+  .vacaciones_montana{
+    display: none;
+    @media screen and (min-width: $tablet){
+      display: inline-block;
+    }
+  }
+  .contact{
+    display: none;
+    @media screen and (min-width: $tablet){
+      display: inline-block;
     }
   }
 }
