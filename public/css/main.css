@@ -28,7 +28,7 @@
   font-family: "Sansa Pro", Verdana, Arial, sans-serif; }
 
 @font-face {
-  font-family: 'Sansa Pro';
+  font-family: 'Sansa Pro Bold';
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/sansa-pro-bold/sansa-pro-bold.eot");
@@ -140,14 +140,14 @@
 
 body {
   margin: 0;
-  font-size: 12px; }
+  font-size: 13px; }
   @media screen and (min-width: 480px) {
     body {
-      font-size: 14px; } }
+      font-size: 13px; } }
   @media (min-width: 960px) {
     body {
       background-color: #eeeeee;
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 body > * {
   width: 100%; }
@@ -162,19 +162,14 @@ body > header {
   body > header nav {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     height: 107px;
-    background: -webkit-linear-gradient(#FFF 0%, #FFF 88%, #ed1c2e 88%, #ed1c2e 90%, #FFF 90%, #FFF 92%, #f99500 92%, #f99500 95%, #FFF 95%, #FFF 97%, #20a0de 97%, #20a0de 100%, #FFF 100%);
+    background: -webkit-linear-gradient(#FFF 0%, #FFF 77%, #ed1c2e 77%, #ed1c2e 82%, #FFF 82%, #FFF 87%, #f99500 87%, #f99500 92%, #FFF 91%, #FFF 95%, #20a0de 95%, #20a0de 100%);
     z-index: 1;
     position: relative; }
     @media (min-width: 960px) {
       body > header nav {
-        height: 87px; } }
+        height: 87px;
+        background: -webkit-linear-gradient(#FFF 0%, #FFF 80%, #ed1c2e 80%, #ed1c2e 85%, #FFF 85%, #FFF 88%, #f99500 88%, #f99500 93%, #FFF 93%, #FFF 95%, #20a0de 95%, #20a0de 100%); } }
     body > header nav .logo {
-      /*width: 90%;
-      height: auto;
-      display: block;
-      position: absolute;
-      left: 5%;
-      bottom: -20px;*/
       max-width: 300px;
       margin: 0 auto;
       display: block;
@@ -187,7 +182,12 @@ body > header {
       padding-top: 50px; }
       @media (min-width: 480px) {
         body > header nav .logo {
-          width: 240px; } }
+          width: 240px;
+          margin: 0 0 0 30px;
+          display: inline-block;
+          padding-top: 55px;
+          padding-left: 10px;
+          vertical-align: top; } }
       @media (min-width: 960px) {
         body > header nav .logo {
           width: 240px;
@@ -198,13 +198,20 @@ body > header {
           vertical-align: top; } }
     body > header nav p {
       display: none;
-      color: #FFF; }
+      color: #FFF;
+      font-family: "Fords Folly", Verdana, Arial, sans-serif;
+      font-size: 1.83em;
+      padding-top: 30px;
+      margin-top: 5px; }
       @media (min-width: 960px) {
         body > header nav p {
           display: inline-block;
           color: #ed1c2e;
-          padding-left: 330px;
-          padding-top: 30px; } }
+          padding-left: 300px;
+          padding-top: 24px;
+          position: absolute;
+          left: 0;
+          font-size: 1.4em; } }
     body > header nav ul {
       float: right;
       display: none;
@@ -216,7 +223,7 @@ body > header {
           display: block; } }
       body > header nav ul li {
         display: inline-block;
-        padding-top: 35px; }
+        padding-top: 25px; }
   body > header .main_image {
     background-image: url("../img/sunweb-wave.svg"), url("../img/header_mobile.jpg");
     background-repeat: no-repeat;
@@ -230,19 +237,20 @@ body > header {
         background-size: 100% auto, 100% auto; } }
     @media (min-width: 480px) {
       body > header .main_image {
-        background-image: url("../img/sunweb-wave-tab.svg"), url("../img/header_tablet.jpg");
+        background-image: url("../img/wave-tab.png"), url("../img/header_tablet.jpg");
+        background-size: 100% auto, auto 98.5%;
         background-position: bottom 0px left, top -25px center;
         background-size: 100% auto, auto 100%;
         height: 384px; } }
     @media (min-width: 800px) and (max-width: 960px) {
       body > header .main_image {
         background-position: bottom 0px left, bottom 30px right;
-        background-size: 100% auto, 100% auto; } }
+        background-size: 100% auto, 100%; } }
     @media (min-width: 960px) {
       body > header .main_image {
         height: 425px;
-        background-image: url("../img/summer-wave-desktop.svg"), url("../img/header_desktop.jpg");
-        background-size: 100% 20%  , auto 100%; } }
+        background-position: bottom 0px left, bottom 34px right;
+        background-image: url("../img/wave-desk.png"), url("../img/header_desktop.jpg"); } }
     body > header .main_image p {
       display: block;
       position: absolute;
@@ -267,7 +275,7 @@ body > header {
           width: 350px;
           text-align: right;
           line-height: 130%;
-          text-shadow: none; }
+          text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); }
           body > header .main_image p > span {
             margin-left: 110px;
             display: inline-block; } }
@@ -291,14 +299,15 @@ body > header {
     margin-top: 20px; }
     @media (min-width: 960px) {
       .main_content header > h1 {
-        padding-top: 30px; } }
+        margin-top: 0px;
+        padding-top: 20px; } }
   .main_content .copy {
     color: #ed1c2e;
     font-family: "Sansa Pro", Verdana, Arial, sans-serif;
     font-weight: 700;
-    font-size: 1.5em; }
+    font-size: 1.4em; }
   .main_content p {
-    font-size: 1.33em;
+    font-size: 1.08em;
     padding: 0 15px;
     line-height: 150%; }
     @media (min-width: 960px) {
@@ -337,15 +346,15 @@ footer {
     width: 50%;
     position: absolute;
     left: 40px;
-    top: 75px; }
+    top: -170px; }
     @media (min-width: 480px) {
       footer .footer_logo {
         width: 175px;
-        top: 110px; } }
+        top: -50px; } }
   footer .weave {
     color: #ed1c2e;
     background-image: url("../img/sunweb-wave.svg");
-    background-size: 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     display: block;
     width: 100%;
@@ -357,6 +366,9 @@ footer {
         height: 75px;
         margin-top: -100px;
         background-position: bottom center; } }
+    @media (min-width: 480px) {
+      footer .weave {
+        margin-top: -110px; } }
     footer .weave p {
       margin: 0px;
       background-color: #fbeb2e;
@@ -374,10 +386,13 @@ footer {
           padding-left: 30%; } }
       @media screen and (min-width: 960px) {
         footer .weave p {
-          margin-top: -25px; } }
+          margin-top: -65px; } }
+      @media (min-width: 1280px) {
+        footer .weave p {
+          padding-left: 40%; } }
     @media screen and (min-width: 960px) {
       footer .weave {
-        margin-top: -80px; } }
+        margin-top: -100px; } }
   footer .columns_wrapper {
     width: 100%;
     background-color: #fbeb2e;
@@ -389,7 +404,7 @@ footer {
         padding-top: 30px; } }
     @media (min-width: 960px) {
       footer .columns_inner_wrapper {
-        max-width: 1400px;
+        max-width: 1000px;
         margin: 0 auto; } }
   footer .column {
     display: inline-block;
@@ -402,18 +417,27 @@ footer {
   @media screen and (min-width: 480px) {
     footer .col_a {
       width: 16%; } }
+  @media screen and (min-width: 960px) {
+    footer .col_a {
+      width: 15%; } }
   footer .col_b {
     width: 100%; }
     @media screen and (min-width: 480px) {
       footer .col_b {
-        width: 20%; } }
+        width: 67%; } }
+    @media screen and (min-width: 960px) {
+      footer .col_b {
+        width: 67%; } }
   footer .col_c {
     width: 35%; }
+    @media screen and (min-width: 960px) {
+      footer .col_c {
+        width: 10%; } }
   @media screen and (min-width: 480px) {
     footer article {
       display: inline-block; } }
   footer article header {
-    font-family: "Sansa Pro", Verdana, Arial, sans-serif;
+    font-family: "Sansa Pro Bold", Verdana, Arial, sans-serif;
     font-size: 0.91em;
     color: #333;
     margin-bottom: 15px;
@@ -425,9 +449,12 @@ footer {
     background-color: #fbeb2e;
     margin: 0;
     padding: 0px 0 30px 0;
-    list-style: none; }
+    list-style: none;
+    line-height: 130%;
+    font-weight: 400; }
     footer article ul li {
-      height: 25px; }
+      height: auto;
+      margin-bottom: 10px; }
       footer article ul li a {
         color: #333;
         text-decoration: none; }
@@ -438,23 +465,56 @@ footer {
     width: 100%; }
   footer .vacaciones_mar {
     width: 100%; }
+    @media screen and (min-width: 480px) {
+      footer .vacaciones_mar {
+        display: inline-block;
+        width: 33%;
+        vertical-align: top; } }
+    @media screen and (min-width: 960px) {
+      footer .vacaciones_mar {
+        width: 29%; } }
   footer .vacaciones_rutas {
     display: none; }
     @media screen and (min-width: 480px) {
       footer .vacaciones_rutas {
-        display: inline-block; } }
+        display: inline-block;
+        width: 33%;
+        vertical-align: top; } }
+    @media screen and (min-width: 960px) {
+      footer .vacaciones_rutas {
+        width: 29%; } }
   footer .social {
     margin-bottom: 30px; }
     footer .social a {
       color: #333;
       text-decoration: none; }
+    @media screen and (min-width: 480px) {
+      footer .social {
+        margin-bottom: 80px;
+        vertical-align: top; } }
+    @media screen and (min-width: 960px) {
+      footer .social {
+        margin-bottom: 105px; } }
   footer .vacaciones_montana {
     display: none; }
     @media screen and (min-width: 480px) {
       footer .vacaciones_montana {
-        display: inline-block; } }
+        display: inline-block;
+        width: 32%; } }
   footer .contact {
     display: none; }
     @media screen and (min-width: 480px) {
       footer .contact {
-        display: inline-block; } }
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 30px; } }
+    @media screen and (min-width: 960px) {
+      footer .contact {
+        bottom: 20px;
+        left: 47%;
+        right: initial; } }
+    @media screen and (min-width: 1200px) {
+      footer .contact {
+        left: 47%;
+        right: initial; } }

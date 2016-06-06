@@ -7,7 +7,7 @@ $path-fonts: '../fonts/' !default;
 // --------------------------------------------------
 
 @font-face {
-  font-family: 'Sansa Pro';
+  font-family: 'Sansa Pro Bold';
   font-style: normal;
   font-weight: 700;
   src: url('#{$path-fonts}sansa-pro-bold/sansa-pro-bold.eot');
@@ -19,7 +19,7 @@ $path-fonts: '../fonts/' !default;
 
 // Set the font variable
 // --------------------------------------------------
-$font-sansa-pro: 'Sansa Pro', Verdana, Arial, sans-serif !default;
+$font-sansa-pro-bold: 'Sansa Pro Bold', Verdana, Arial, sans-serif !default;
 
 // Set the font selector
 // --------------------------------------------------
