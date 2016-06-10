@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Sansa Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sansa-pro/sansa-pro.eot");
+  src: url("../fonts/sansa-pro/sansa-pro.eot?#iefix") format("embedded-opentype"), url("../fonts/sansa-pro/sansa-pro.woff") format("woff"), url("../fonts/sansa-pro/sansa-pro.ttf") format("truetype"), url("../fonts/sansa-pro/sansa-pro.svg#sansa-pro") format("svg"); }
+
+.font-sansa-pro {
+  font-family: "Sansa Pro", Verdana, Arial, sans-serif; }

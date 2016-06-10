@@ -7,11 +7,11 @@ $black: #333;
 $white: #FFF;
 $yellow: #fbeb2e;
 
-@import '../public/fonts/pacifico/pacifico.scss';//$font-pacifico
-@import '../public/fonts/sansa-pro/sansa-pro.scss';// $font-sansa-pro
-@import '../public/fonts/sansa-pro-bold/sansa-pro-bold.scss';// $font-sansa-pro
-@import '../public/fonts/forsd-folly/fords-folly.scss';//  $font-fords-folly
-@import '../public/fonts/sunweb-icons/scss/sunweb-icons.scss';//  $ICONS
+@import 'pacifico.scss';//$font-pacifico
+@import 'sansa-pro.scss';// $font-sansa-pro
+@import 'sansa-pro-bold.scss';// $font-sansa-pro
+@import 'fords-folly.scss';//  $font-fords-folly
+@import 'sunweb-icons.scss';//  $ICONS
 
 $tablet: 480px;
 $desktop: 960px;

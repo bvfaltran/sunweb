@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pacifico/pacifico.eot");
+  src: url("../fonts/pacifico/pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico/pacifico.woff") format("woff"), url("../fonts/pacifico/pacifico.ttf") format("truetype"), url("../fonts/pacifico/pacifico.svg#pacifico") format("svg"); }
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pacifico.eot");
+  src: url("../fonts/pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico.woff") format("woff"), url("../fonts/pacifico.ttf") format("truetype"), url("../fonts/pacifico.svg#pacifico") format("svg"); }
+
+.font-pacifico {
+  font-family: "Pacifico", Verdana, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
