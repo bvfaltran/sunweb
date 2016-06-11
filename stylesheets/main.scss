@@ -1,26 +1,7 @@
-
-$red: #ed1c2e;
-$orange: #f99500;
-$blue: #20a0de;
-$gray: #eeeeee;
-$black: #333;
-$white: #FFF;
-$yellow: #fbeb2e;
-
+@import 'variables';
 @import 'fonts';
 
-$tablet: 480px;
-$desktop: 960px;
 
-$smaller-font-size: 0.91em;
-$regular-font-size: 1em;
-$bigger-font-size: 1.08em;
-$biggest-font-size: 1.33em;
-
-$subtitle-font-size: 1.40em;
-$title-font-size: 1.83em;
-$header-font-size: 2.16em;
-$uverbig-font-size: 3.5em;
 
 body{
   margin: 0;
@@ -38,6 +19,10 @@ body{
 body > * {
   width: 100%;
 }
+
+
+
+
 
 //MAIN HEADER
 body > header{
@@ -85,7 +70,7 @@ body > header{
         vertical-align: top;
       }
     }
-    p{
+    h2{
       display: none;
       color: $white;
       font-family: $font-fords-folly;
@@ -144,7 +129,7 @@ body > header{
       background-position: bottom 0px left, bottom 34px right;
       background-image:  url('../img/wave-desk.png'), url('../img/header_desktop.jpg');
     }
-    p{
+    h1{
       display: block;
       position: absolute;
       bottom:0;
@@ -191,7 +176,7 @@ body > header{
     background-color: $white;
     padding-bottom: 30px;
   }
-  header > h1{
+  header > h3{
     font-family: $font-sansa-pro;
     font-size: $header-font-size;
     margin-top: 20px;
@@ -276,7 +261,7 @@ footer{
     @media (min-width:$tablet){
       margin-top: -110px;
     }
-    p{
+    h2{
       margin: 0px;
       background-color: $yellow;
       font-family: $font-fords-folly;
@@ -355,7 +340,8 @@ footer{
       display: inline-block;
     }
     .header{
-      font-family: $font-sansa-pro-bold;
+      font-family: $font-sansa-pro;
+      font-weight: 700;
       font-size: $smaller-font-size;
       color: $black;
       margin-bottom: 15px;
@@ -392,7 +378,7 @@ footer{
       //width: 29%;
     }
   }
-  .vacaciones_mar{
+  .sea_holidays{
     width: 100%;
     @media screen and (min-width: $tablet){
       display: inline-block;
@@ -403,7 +389,7 @@ footer{
       width: 29%;
     }
   }
-  .vacaciones_rutas{
+  .routes_holidays{
     display: none;
     @media screen and (min-width: $tablet){
       display: inline-block;
@@ -428,7 +414,7 @@ footer{
       margin-bottom: 105px;
     }
   }
-  .vacaciones_montana{
+  .mountain_holidays{
     display: none;
     @media screen and (min-width: $tablet){
       display: inline-block;
