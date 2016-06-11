@@ -1,7 +1,7 @@
 // Pacifico
 // --------------------------------------------------
 
-$path-fonts: '../fonts/' !default;
+$path-fonts: '' !default;
 
 // Import the font file as both regular & bold weights
 // --------------------------------------------------
@@ -11,11 +11,11 @@ $path-fonts: '../fonts/' !default;
   font-style: normal;
   font-weight: 400;
 
-  src: url('#{$path-fonts}pacifico/pacifico.eot');
-  src: url('#{$path-fonts}pacifico/pacifico.eot?#iefix') format('embedded-opentype'),
-  url('#{$path-fonts}pacifico/pacifico.woff') format('woff'),
-  url('#{$path-fonts}pacifico/pacifico.ttf')  format('truetype'),
-  url('#{$path-fonts}pacifico/pacifico.svg#pacifico') format('svg');
+  src: url('#{$path-fonts}pacifico.eot');
+  src: url('#{$path-fonts}pacifico.eot?#iefix') format('embedded-opentype'),
+  url('#{$path-fonts}pacifico.woff') format('woff'),
+  url('#{$path-fonts}pacifico.ttf')  format('truetype'),
+  url('#{$path-fonts}pacifico.svg#pacifico') format('svg');
 }
 @font-face {
   font-family: 'Pacifico';
