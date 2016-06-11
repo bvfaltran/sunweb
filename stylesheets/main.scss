@@ -7,11 +7,7 @@ $black: #333;
 $white: #FFF;
 $yellow: #fbeb2e;
 
-@import 'pacifico.scss';//$font-pacifico
-@import 'sansa-pro.scss';// $font-sansa-pro
-@import 'sansa-pro-bold.scss';// $font-sansa-pro
-@import 'fords-folly.scss';//  $font-fords-folly
-@import 'sunweb-icons.scss';//  $ICONS
+@import 'fonts';
 
 $tablet: 480px;
 $desktop: 960px;

@@ -2,8 +2,8 @@
   font-family: 'Pacifico';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pacifico/pacifico.eot");
-  src: url("../fonts/pacifico/pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico/pacifico.woff") format("woff"), url("../fonts/pacifico/pacifico.ttf") format("truetype"), url("../fonts/pacifico/pacifico.svg#pacifico") format("svg"); }
+  src: url("../fonts/pacifico.eot");
+  src: url("../fonts/pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico.woff") format("woff"), url("../fonts/pacifico.ttf") format("truetype"), url("../fonts/pacifico.svg#pacifico") format("svg"); }
 
 @font-face {
   font-family: 'Pacifico';
@@ -21,8 +21,8 @@
   font-family: 'Sansa Pro';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/sansa-pro/sansa-pro.eot");
-  src: url("../fonts/sansa-pro/sansa-pro.eot?#iefix") format("embedded-opentype"), url("../fonts/sansa-pro/sansa-pro.woff") format("woff"), url("../fonts/sansa-pro/sansa-pro.ttf") format("truetype"), url("../fonts/sansa-pro/sansa-pro.svg#sansa-pro") format("svg"); }
+  src: url("../fonts/sansa-pro.eot");
+  src: url("../fonts/sansa-pro.eot?#iefix") format("embedded-opentype"), url("../fonts/sansa-pro.woff") format("woff"), url("../fonts/sansa-pro.ttf") format("truetype"), url("../fonts/sansa-pro.svg#sansa-pro") format("svg"); }
 
 .font-sansa-pro {
   font-family: "Sansa Pro", Verdana, Arial, sans-serif; }
@@ -31,26 +31,26 @@
   font-family: 'Sansa Pro Bold';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/sansa-pro-bold/sansa-pro-bold.eot");
-  src: url("../fonts/sansa-pro-bold/sansa-pro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/sansa-pro-bold/sansa-pro-bold.woff") format("woff"), url("../fonts/sansa-pro-bold/sansa-pro-bold.ttf") format("truetype"), url("../fonts/sansa-pro-bold/sansa-pro-bold.svg#sansa-pro-bold") format("svg"); }
+  src: url("../fonts/sansa-pro-bold.eot");
+  src: url("../fonts/sansa-pro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/sansa-pro-bold.woff") format("woff"), url("../fonts/sansa-pro-bold.ttf") format("truetype"), url("../fonts/sansa-pro-bold.svg#sansa-pro-bold") format("svg"); }
 
 .font-sansa-pro-bold {
-  font-family: "Sansa Pro", Verdana, Arial, sans-serif;
+  font-family: "Sansa Pro Bold", Verdana, Arial, sans-serif;
   font-weight: 700; }
 
 @font-face {
   font-family: 'Fords Folly';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/forsd-folly/fords-folly.eot");
-  src: url("../fonts/forsd-folly/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/forsd-folly/fords-folly.woff2") format("woff2"), url("../fonts/forsd-folly/fords-folly.woff") format("woff"), url("../fonts/forsd-folly/fords-folly.ttf") format("truetype"), url("../fonts/forsd-folly/fords-folly.svg#fordsfolly") format("svg"); }
+  src: url("../fonts/fords-folly.eot");
+  src: url("../fonts/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/fords-folly.woff2") format("woff2"), url("../fonts/fords-folly.woff") format("woff"), url("../fonts/fords-folly.ttf") format("truetype"), url("../fonts/fords-folly.svg#fordsfolly") format("svg"); }
 
 @font-face {
   font-family: 'Fords Folly';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/forsd-folly/fords-folly.eot");
-  src: url("../fonts/forsd-folly/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/forsd-folly/fords-folly.woff2") format("woff2"), url("../fonts/forsd-folly/fords-folly.woff") format("woff"), url("../fonts/forsd-folly/fords-folly.ttf") format("truetype"), url("../fonts/forsd-folly/fords-folly.svg#fords-folly") format("svg"); }
+  src: url("../fonts/fords-folly.eot");
+  src: url("../fonts/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/fords-folly.woff2") format("woff2"), url("../fonts/fords-folly.woff") format("woff"), url("../fonts/fords-folly.ttf") format("truetype"), url("../fonts/fords-folly.svg#fords-folly") format("svg"); }
 
 .font-fords-folly {
   font-family: "Fords Folly", Verdana, Arial, sans-serif;
@@ -61,8 +61,8 @@
   font-family: 'sunweb-icons';
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts//sunweb-icons/fonts/sunweb-icons.eot?-nhl0i");
-  src: url("../fonts//sunweb-icons/fonts/sunweb-icons.eot?#iefix-nhl0i") format("embedded-opentype"), url("../fonts//sunweb-icons/fonts/sunweb-icons.ttf?-nhl0i") format("truetype"), url("../fonts//sunweb-icons/fonts/sunweb-icons.woff?-nhl0i") format("woff"), url("../fonts//sunweb-icons/fonts/sunweb-icons.svg?-nhl0i#sunweb-icons") format("svg"); }
+  src: url("../fonts/sunweb-icons.eot?-nhl0i");
+  src: url("../fonts/sunweb-icons.eot?#iefix-nhl0i") format("embedded-opentype"), url("../fonts/sunweb-icons.ttf?-nhl0i") format("truetype"), url("../fonts/sunweb-icons.woff?-nhl0i") format("woff"), url("../fonts/sunweb-icons.svg?-nhl0i#sunweb-icons") format("svg"); }
 
 .icon {
   font-family: 'sunweb-icons';
@@ -137,6 +137,25 @@
 
 .icon-xl {
   font-size: 200%; }
+
+@font-face {
+  font-family: 'YWFT Signature';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ywft-signature.eot");
+  src: url("../fonts/ywft-signature.eot?#iefix") format("embedded-opentype"), url("../fonts/ywft-signature.woff") format("woff"), url("../fonts/ywft-signature.ttf") format("truetype"), url("../fonts/ywft-signature.svg#ywft_signature_regular") format("svg"); }
+
+@font-face {
+  font-family: 'YWFT Signature';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ywft-signature.eot");
+  src: url("../fonts/ywft-signature.eot?#iefix") format("embedded-opentype"), url("../fonts/ywft-signature.woff") format("woff"), url("../fonts/ywft-signature.ttf") format("truetype"), url("../fonts/ywft-signature.svg#ywft_signature_regular") format("svg"); }
+
+.font-ywft-signature {
+  font-family: "YWFT Signature", Verdana, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 body {
   margin: 0;

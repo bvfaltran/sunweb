@@ -13,16 +13,16 @@ Pixel perfect result
 
 Bonus points
 
-Use HTML5 document
+Use HTML5 document[x]
 Use HTML5 elements properly
 Minimized number of DOM elements
-Make your HTML complaint with W3C criteria
-Use semantic class names [x]
+Make your HTML complaint with W3C criteria[]
+Use semantic class names []
 Use a CSS preprocessor [x]
 Use SASS as a CSS preprocessor [x]
 Do not use any styles framework such as Bootstrap [x]
 Use variables for colors [x]
-Use variables for breakpoints and mixins for mediaqueries [/]
+Use variables for breakpoints and mixins for mediaqueries []
 Do not use CSS selectors deeper than 3 levels
 Organize your source stylesheets on separate files
 Mobile first everything [x]
