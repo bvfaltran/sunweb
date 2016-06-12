@@ -1,0 +1,21 @@
+{
+  "name": "sunweb",
+  "description": "Simple page test",
+  "main": "index.html",
+  "authors": [
+    "Brais Vazquez Farre"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bvfaltran/sunweb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "prefixfree": "*",
+    "jquery": "^3.0.0"
+  }
+}

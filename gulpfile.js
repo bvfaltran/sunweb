@@ -4,17 +4,11 @@ var sass = require('gulp-sass');
 var input = './stylesheets/main.scss';
 
 var pacificoOrigin = ['./assets/pacifico/*.eot','./assets/pacifico/*.svg','./assets/pacifico/*.ttf','./assets/pacifico/*.woff','./assets/pacifico/*.woff2'];
-var pacificoOriginStyles = './assets/pacifico/*.scss';
 var forsdOrigin = ['./assets/forsd-folly/*.eot','./assets/forsd-folly/*.svg','./assets/forsd-folly/*.ttf','./assets/forsd-folly/*.woff','./assets/forsd-folly/*.woff2'];
-var forsdOriginStyles = './assets/forsd-folly/*.scss';
 var sansaProOrigin = ['./assets/sansa-pro/*.eot','./assets/sansa-pro/*.svg','./assets/sansa-pro/*.ttf','./assets/sansa-pro/*.woff','./assets/sansa-pro/*.woff2'];
-var sansaProOriginStyles = './assets/sansa-pro/*.scss';
 var sansaProBoldOrigin = ['./assets/sansa-pro-bold/*.eot','./assets/sansa-pro-bold/*.svg','./assets/sansa-pro-bold/*.ttf','./assets/sansa-pro-bold/*.woff','./assets/sansa-pro-bold/*.woff2'];
-var sansaProBoldOriginStyles = './assets/sansa-pro-bold/*.scss';
 var iconsOrigin = ['./assets/sunweb-icons/fonts/*.eot','./assets/sunweb-icons/fonts/*.svg','./assets/sunweb-icons/fonts/*.ttf','./assets/sunweb-icons/fonts/*.woff','./assets/sunweb-icons/fonts/*.woff2'];
-var iconsOriginStyles = './assets/sunweb-icons/scss/*.scss';
 var ywftOrigin = ['./assets/ywft-signature/*.eot','./assets/ywft-signature/*.svg','./assets/ywft-signature/*.ttf','./assets/ywft-signature/*.woff','./assets/ywft-signature/*.woff2'];
-var ywftOriginStyles = './assets/ywft-signature/*.scss';
 
 var output = './public/css';
 var fontsTarget = './public/fonts';
