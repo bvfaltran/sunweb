@@ -1,6 +1,6 @@
 Dev dependencies installation: npm install
 
-Assets deployment using gulp: gulp bundleAll
+Assets deployment using gulp: gulp bundleAll (having trouble? You probably need a gulp global (-g) installation)
 
 3rd party js libraries installation using bower.
 
