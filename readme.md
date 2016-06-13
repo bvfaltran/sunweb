@@ -1,5 +1,7 @@
 Dev dependencies installation: npm install
+
 Assets deployment using gulp: gulp bundleAll
+
 3rd party js libraries installation using bower.
 
 
