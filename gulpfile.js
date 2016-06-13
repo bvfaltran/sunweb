@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var cleanCSS = require('gulp-clean-css');
 
 var input = './stylesheets/main.scss';
 
@@ -48,13 +49,13 @@ gulp.task('bundleFonts6', function () {
 
 gulp.task('bundleFonts', ['bundleFonts1', 'bundleFonts2', 'bundleFonts3', 'bundleFonts4', 'bundleFonts5', 'bundleFonts6']);
 
-
 gulp.task('default', function () {
   return gulp
     // Find all `.scss` files from the `stylesheets/` folder
     .src(input)
     // Run Sass on those files
     .pipe(sass())
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     // Write the resulting CSS in the output folder
     .pipe(gulp.dest(output));
 });
