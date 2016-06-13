@@ -1,3 +1,8 @@
+Dev dependencies installation: npm install
+Assets deployment using gulp: gulp bundleAll
+3rd party js libraries installation using bower.
+
+
 Using the provided design, build a static HTML and Styles that matches the original.
 Implement it responsive, using at least two breakpoints to fit the three main screen cases (480px & 960px).
 Take your time, and feel free to ask any doubt.
