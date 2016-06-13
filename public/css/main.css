@@ -1,3 +1,50 @@
+/*$smaller-font-size: 0.91em;
+$regular-font-size: 1em;
+$bigger-font-size: 1.08em;
+$biggest-font-size: 1.33em;
+
+$subtitle-font-size: 1.40em;
+$title-font-size: 1.83em;
+$header-font-size: 2.16em;
+$uverbig-font-size: 3.5em;*/
+@font-face {
+  font-family: 'YWFT Signature';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ywft-signature.eot");
+  src: url("../fonts/ywft-signature.eot?#iefix") format("embedded-opentype"), url("../fonts/ywft-signature.woff") format("woff"), url("../fonts/ywft-signature.ttf") format("truetype"), url("../fonts/ywft-signature.svg#ywft_signature_regular") format("svg"); }
+
+@font-face {
+  font-family: 'YWFT Signature';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ywft-signature.eot");
+  src: url("../fonts/ywft-signature.eot?#iefix") format("embedded-opentype"), url("../fonts/ywft-signature.woff") format("woff"), url("../fonts/ywft-signature.ttf") format("truetype"), url("../fonts/ywft-signature.svg#ywft_signature_regular") format("svg"); }
+
+.font-ywft-signature {
+  font-family: "YWFT Signature", Verdana, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+@font-face {
+  font-family: 'Fords Folly';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fords-folly.eot");
+  src: url("../fonts/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/fords-folly.woff2") format("woff2"), url("../fonts/fords-folly.woff") format("woff"), url("../fonts/fords-folly.ttf") format("truetype"), url("../fonts/fords-folly.svg#fordsfolly") format("svg"); }
+
+@font-face {
+  font-family: 'Fords Folly';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/fords-folly.eot");
+  src: url("../fonts/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/fords-folly.woff2") format("woff2"), url("../fonts/fords-folly.woff") format("woff"), url("../fonts/fords-folly.ttf") format("truetype"), url("../fonts/fords-folly.svg#fords-folly") format("svg"); }
+
+.font-fords-folly {
+  font-family: "Fords Folly", Verdana, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 @font-face {
   font-family: 'Pacifico';
   font-style: normal;
@@ -28,34 +75,15 @@
   font-family: "Sansa Pro", Verdana, Arial, sans-serif; }
 
 @font-face {
-  font-family: 'Sansa Pro Bold';
+  font-family: 'Sansa Pro';
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/sansa-pro-bold.eot");
   src: url("../fonts/sansa-pro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/sansa-pro-bold.woff") format("woff"), url("../fonts/sansa-pro-bold.ttf") format("truetype"), url("../fonts/sansa-pro-bold.svg#sansa-pro-bold") format("svg"); }
 
 .font-sansa-pro-bold {
-  font-family: "Sansa Pro Bold", Verdana, Arial, sans-serif;
+  font-family: "Sansa Pro", Verdana, Arial, sans-serif;
   font-weight: 700; }
-
-@font-face {
-  font-family: 'Fords Folly';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/fords-folly.eot");
-  src: url("../fonts/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/fords-folly.woff2") format("woff2"), url("../fonts/fords-folly.woff") format("woff"), url("../fonts/fords-folly.ttf") format("truetype"), url("../fonts/fords-folly.svg#fordsfolly") format("svg"); }
-
-@font-face {
-  font-family: 'Fords Folly';
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/fords-folly.eot");
-  src: url("../fonts/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/fords-folly.woff2") format("woff2"), url("../fonts/fords-folly.woff") format("woff"), url("../fonts/fords-folly.ttf") format("truetype"), url("../fonts/fords-folly.svg#fords-folly") format("svg"); }
-
-.font-fords-folly {
-  font-family: "Fords Folly", Verdana, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
 
 @font-face {
   font-family: 'sunweb-icons';
@@ -157,385 +185,396 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+ul {
+  padding: 0;
+  list-style: none; }
+
 body {
   margin: 0;
-  font-size: 13px; }
-  @media screen and (min-width: 480px) {
-    body {
-      font-size: 13px; } }
+  font-size: 12px; }
   @media (min-width: 960px) {
     body {
-      background-color: #eeeeee;
-      font-size: 14px; } }
+      background-color: #eeeeee; } }
 
 body > * {
   width: 100%; }
 
-body > header {
+header {
   width: 100%; }
   @media (min-width: 960px) {
-    body > header {
+    header {
       max-width: 1400px;
       margin: 0 auto;
       background-color: #FFF; } }
-  body > header nav {
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    height: 107px;
-    background: -webkit-linear-gradient(#FFF 0%, #FFF 77%, #ed1c2e 77%, #ed1c2e 82%, #FFF 82%, #FFF 87%, #f99500 87%, #f99500 92%, #FFF 91%, #FFF 95%, #20a0de 95%, #20a0de 100%);
+  header nav {
+    height: 108px;
+    background: -webkit-linear-gradient(#FFF 0px, #FFF 81px, #ed1c2e 81px, #ed1c2e 87px, #FFF 87px, #FFF 94px, #f99500 94px, #f99500 99px, #FFF 99px, #FFF 103px, #20a0de 103px, #20a0de 108px);
     z-index: 1;
     position: relative; }
+    @media (min-width: 480px) and (max-width: 959px) {
+      header nav {
+        height: 81px;
+        background: -webkit-linear-gradient(#FFF 0px, #FFF 66px, #ed1c2e 66px, #ed1c2e 69px, #FFF 69px, #FFF 73px, #f99500 73px, #f99500 76px, #FFF 76px, #FFF 79px, #20a0de 79px, #20a0de 82px); } }
     @media (min-width: 960px) {
-      body > header nav {
-        height: 87px;
-        background: -webkit-linear-gradient(#FFF 0%, #FFF 80%, #ed1c2e 80%, #ed1c2e 85%, #FFF 85%, #FFF 88%, #f99500 88%, #f99500 93%, #FFF 93%, #FFF 95%, #20a0de 95%, #20a0de 100%); } }
-    body > header nav .logo {
-      max-width: 300px;
-      margin: 0 auto;
-      display: block;
-      padding: 0;
-      margin-top: 20px;
-      position: relative;
-      width: auto;
-      max-height: 75px;
-      left: auto;
-      padding-top: 50px; }
-      @media (min-width: 480px) {
-        body > header nav .logo {
-          width: 240px;
-          margin: 0 0 0 30px;
-          display: inline-block;
-          padding-top: 55px;
-          padding-left: 10px;
-          vertical-align: top; } }
-      @media (min-width: 960px) {
-        body > header nav .logo {
-          width: 240px;
-          margin: 0 0 0 30px;
-          display: inline-block;
-          padding-top: 35px;
-          padding-left: 10px;
-          vertical-align: top; } }
-    body > header nav p {
-      display: none;
-      color: #FFF;
-      font-family: "Fords Folly", Verdana, Arial, sans-serif;
-      font-size: 1.83em;
-      padding-top: 30px;
-      margin-top: 5px; }
-      @media (min-width: 960px) {
-        body > header nav p {
-          display: inline-block;
-          color: #ed1c2e;
-          padding-left: 300px;
-          padding-top: 24px;
-          position: absolute;
-          left: 0;
-          font-size: 1.4em; } }
-    body > header nav ul {
-      float: right;
-      display: none;
-      margin: 0px;
-      padding: 0px;
-      list-style: none; }
-      @media (min-width: 960px) {
-        body > header nav ul {
-          display: block; } }
-      body > header nav ul li {
+      header nav {
+        height: 81px;
+        background: -webkit-linear-gradient(#FFF 0px, #FFF 66px, #ed1c2e 66px, #ed1c2e 69px, #FFF 69px, #FFF 73px, #f99500 73px, #f99500 76px, #FFF 76px, #FFF 79px, #20a0de 79px, #20a0de 82px); } }
+  header .logo {
+    display: block;
+    position: relative;
+    left: auto;
+    max-width: 300px;
+    width: auto;
+    max-height: 75px;
+    margin: 20px auto 0 auto;
+    padding: 50px 0 0 0; }
+    @media (min-width: 480px) and (max-width: 959px) {
+      header .logo {
         display: inline-block;
-        padding-top: 25px; }
-  body > header .main_image {
-    background-image: url("../img/sunweb-wave.svg"), url("../img/header_mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom 60px left, top right -20px;
-    background-size: 100% auto, auto 100%;
-    height: 275px;
-    position: relative; }
-    @media (min-width: 450px) and (max-width: 480px) {
-      body > header .main_image {
-        background-position: bottom 60px left, top right;
-        background-size: 100% auto, 100% auto; } }
-    @media (min-width: 480px) {
-      body > header .main_image {
-        background-image: url("../img/wave-tab.png"), url("../img/header_tablet.jpg");
-        background-size: 100% auto, auto 98.5%;
-        background-position: bottom 0px left, top -25px center;
-        background-size: 100% auto, auto 100%;
-        height: 384px; } }
-    @media (min-width: 800px) and (max-width: 960px) {
-      body > header .main_image {
-        background-position: bottom 0px left, bottom 30px right;
-        background-size: 100% auto, 100%; } }
+        vertical-align: top;
+        width: 240px;
+        margin: 0 0 0 30px;
+        padding-top: 35px;
+        padding-left: 10px; } }
     @media (min-width: 960px) {
-      body > header .main_image {
-        height: 425px;
-        background-position: bottom 0px left, bottom 34px right;
-        background-image: url("../img/wave-desk.png"), url("../img/header_desktop.jpg"); } }
-    body > header .main_image p {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      margin: 0;
-      text-align: center;
-      background-color: #fbeb2e;
-      color: #333;
-      font-family: "Pacifico", Verdana, Arial, sans-serif;
-      font-size: 1.83em;
-      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8);
-      padding-top: 6px;
-      padding-bottom: 15px; }
-      @media screen and (min-width: 480px) {
-        body > header .main_image p {
-          position: absolute;
-          top: 50px;
-          left: 10px;
-          background-color: initial;
-          font-size: 3.5em;
-          width: 350px;
-          text-align: right;
-          line-height: 130%;
-          text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); }
-          body > header .main_image p > span {
-            margin-left: 110px;
-            display: inline-block; } }
-      @media screen and (min-width: 960px) {
-        body > header .main_image p {
-          text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8); } }
+      header .logo {
+        display: inline-block;
+        vertical-align: top;
+        width: 240px;
+        margin: 0 0 0 30px;
+        padding-top: 35px;
+        padding-left: 10px; } }
+  header h2 {
+    display: none;
+    font-family: "Fords Folly", Verdana, Arial, sans-serif;
+    font-size: 2em;
+    color: #FFF;
+    padding-top: 30px;
+    margin-top: 5px; }
+    @media (min-width: 960px) {
+      header h2 {
+        display: inline-block;
+        color: #ed1c2e;
+        padding-left: 300px;
+        padding-top: 24px;
+        position: absolute;
+        left: 0; } }
+  header ul {
+    display: none;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+    @media (min-width: 960px) {
+      header ul {
+        display: block; } }
+    header ul li {
+      display: inline-block;
+      padding-top: 25px;
+      padding-right: 7px; }
+
+.main_image {
+  position: relative;
+  background-image: url("../img/sunweb-wave.svg"), url("../img/header_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 49px left, top right -20px;
+  background-size: 100% auto, auto 100%;
+  height: 275px; }
+  @media (min-width: 450px) and (max-width: 479px) {
+    .main_image {
+      background-position: bottom 49px left, top right;
+      background-size: 100% auto, 100% auto; } }
+  @media (min-width: 480px) and (max-width: 959px) {
+    .main_image {
+      background-image: url("../img/wave-tab.png"), url("../img/header_tablet.jpg");
+      background-size: 100% auto, auto 98.5%;
+      background-position: bottom 0px left, top -25px center;
+      background-size: 100% auto, auto 100%;
+      height: 384px; } }
+  @media (min-width: 750px) and (max-width: 959px) {
+    .main_image {
+      background-position: bottom 0px left, bottom 30px right;
+      background-size: 100% auto, 100%; } }
+  @media (min-width: 960px) {
+    .main_image {
+      background-position: bottom 0px left, bottom 34px right;
+      background-image: url("../img/wave-desk.png"), url("../img/header_desktop.jpg");
+      height: 425px; } }
+  .main_image h1 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #fbeb2e;
+    color: #333;
+    font-family: "Pacifico", Verdana, Arial, sans-serif;
+    font-size: 1.83em;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8);
+    line-height: 130%;
+    padding-top: 6px;
+    padding-bottom: 15px; }
+    @media (min-width: 480px) and (max-width: 959px) {
+      .main_image h1 {
+        background-color: none;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        background-color: initial;
+        font-size: 4.16em;
+        width: 350px;
+        text-align: right;
+        line-height: 130%;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); }
+        .main_image h1 > span {
+          margin-left: 110px;
+          display: inline-block; } }
+    @media (min-width: 960px) {
+      .main_image h1 {
+        background-color: initial;
+        font-size: 5.83em;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        width: 40%;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8); }
+        .main_image h1 > span {
+          margin-left: 110px;
+          display: inline-block; } }
 
 .main_content {
   color: #333;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 30px;
+  margin-bottom: 170px; }
   @media (min-width: 960px) {
     .main_content {
       max-width: 1400px;
       margin: 0 auto;
+      margin-bottom: 190px;
       background-color: #FFF;
       padding-bottom: 30px; } }
-  .main_content header > h1 {
+  .main_content h3 {
     font-family: "Sansa Pro", Verdana, Arial, sans-serif;
-    font-size: 2.16em;
+    font-size: 2em;
     margin-top: 20px; }
     @media (min-width: 960px) {
-      .main_content header > h1 {
+      .main_content h3 {
         margin-top: 0px;
         padding-top: 20px; } }
   .main_content .copy {
-    color: #ed1c2e;
     font-family: "Sansa Pro", Verdana, Arial, sans-serif;
+    font-size: 1.5em;
     font-weight: 700;
-    font-size: 1.4em; }
+    color: #ed1c2e; }
   .main_content p {
-    font-size: 1.08em;
-    padding: 0 15px;
-    line-height: 150%; }
+    font-family: "Verdana", sans-serif;
+    font-size: 1em;
+    line-height: 150%;
+    padding: 0 15px; }
     @media (min-width: 960px) {
       .main_content p {
         padding: 0px 25px;
-        max-width: 965px;
+        max-width: 960px;
         margin: 0 auto 20px auto; } }
   .main_content a {
     color: #20a0de; }
   .main_content .button {
-    background-color: #ed1c2e;
+    font-family: "Sansa Pro", Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
     color: #FFF;
-    border-radius: 10px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "Sansa Pro", Verdana, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 1.08em;
+    background-color: #ed1c2e;
+    border-radius: 10px;
     margin: 50px auto;
     display: block;
-    width: 190px;
+    width: 200px;
     padding: 10px 15px; }
 
-footer {
+.footer {
   background-color: #eeeeee;
   text-align: center;
   position: relative;
-  padding-top: 170px; }
-  @media (min-width: 480px) {
-    footer {
+  padding-top: 110px; }
+  @media (min-width: 480px) and (max-width: 959px) {
+    .footer {
+      text-align: left;
+      padding-top: 150px; } }
+  @media (min-width: 960px) {
+    .footer {
+      padding-top: 170px; } }
+
+.footer_content_wrapper h4.header, .footer_menu h4.header {
+  font-family: "Sansa Pro", Verdana, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333; }
+
+.footer_content_wrapper li, .footer_menu li {
+  margin-bottom: 10px; }
+  .footer_content_wrapper li a, .footer_menu li a {
+    font-family: "Verdana", sans-serif;
+    color: #333;
+    text-decoration: none; }
+
+.weave {
+  font-family: "Fords Folly", Verdana, Arial, sans-serif;
+  text-align: center;
+  color: #ed1c2e;
+  background-color: #eeeeee; }
+
+.weave {
+  background-image: url("../img/sunweb-wave.svg");
+  background-size: 2300px auto;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin-top: -150px;
+  height: 125px;
+  position: relative; }
+  @media (min-width: 480px) and (max-width: 959px) {
+    .weave {
+      height: 155px;
+      margin-top: -180px; } }
+  @media (min-width: 960px) {
+    .weave {
+      background-size: 100% auto; } }
+  .weave h2 {
+    top: 120px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.83em; }
+    @media (min-width: 480px) and (max-width: 959px) {
+      .weave h2 {
+        top: 20px;
+        text-align: center;
+        width: 100%; } }
+    @media (min-width: 750px) and (max-width: 959px) {
+      .weave h2 {
+        top: 40%;
+        text-align: center;
+        right: 10%;
+        width: initial; } }
+    @media (min-width: 960px) {
+      .weave h2 {
+        top: 0px;
+        text-align: center;
+        width: initial;
+        left: 40%; } }
+
+.footer_menu {
+  padding-top: 70px;
+  margin-top: 30px; }
+  @media (min-width: 480px) and (max-width: 959px) {
+    .footer_menu {
+      padding-top: 0px; } }
+  @media (min-width: 960px) {
+    .footer_menu {
+      padding-top: 0px; } }
+
+.footer_content {
+  background-color: #fbeb2e;
+  padding-top: 25px;
+  width: 100%; }
+
+.columns_inner_wrapper {
+  position: relative;
+  display: flex;
+  text-align: center; }
+  @media (min-width: 480px) and (max-width: 959px) {
+    .columns_inner_wrapper {
+      max-width: 920px;
+      margin: 0 auto;
       text-align: left; } }
   @media (min-width: 960px) {
-    footer {
-      padding-top: 170px; } }
-  footer .footer_logo {
-    width: 50%;
-    position: absolute;
-    left: 40px;
-    top: -170px; }
-    @media (min-width: 480px) {
-      footer .footer_logo {
-        width: 175px;
-        top: -50px; } }
-  footer .weave {
-    color: #ed1c2e;
-    background-image: url("../img/sunweb-wave.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    display: block;
-    width: 100%;
-    padding-top: 10px;
-    height: auto;
-    margin-top: -70px; }
-    @media (min-width: 480px) {
-      footer .weave {
-        height: 75px;
-        margin-top: -100px;
-        background-position: bottom center; } }
-    @media (min-width: 480px) {
-      footer .weave {
-        margin-top: -110px; } }
-    footer .weave p {
-      margin: 0px;
-      background-color: #fbeb2e;
-      font-family: "Fords Folly", Verdana, Arial, sans-serif;
-      font-size: 1.83em;
-      padding: 20px 30px 20px 30px; }
-      @media screen and (min-width: 480px) {
-        footer .weave p {
-          background-color: initial;
-          padding: 20px 15px 20px 15px;
-          margin-top: -110px; } }
-      @media screen and (min-width: 750px) {
-        footer .weave p {
-          margin-top: -15px;
-          padding-left: 30%; } }
-      @media screen and (min-width: 960px) {
-        footer .weave p {
-          margin-top: -65px; } }
-      @media (min-width: 1280px) {
-        footer .weave p {
-          padding-left: 40%; } }
-    @media screen and (min-width: 960px) {
-      footer .weave {
-        margin-top: -100px; } }
-  footer .columns_wrapper {
-    width: 100%;
-    background-color: #fbeb2e;
-    padding-top: 25px; }
-  footer .columns_inner_wrapper {
-    position: relative; }
-    @media (min-width: 480px) {
-      footer .columns_inner_wrapper {
-        padding-top: 30px; } }
-    @media (min-width: 960px) {
-      footer .columns_inner_wrapper {
-        max-width: 1000px;
-        margin: 0 auto; } }
-  footer .column {
-    display: inline-block;
-    width: 100%; }
-    @media screen and (min-width: 480px) {
-      footer .column {
-        width: 24%;
-        padding: 0 4%;
-        vertical-align: top; } }
-  @media screen and (min-width: 480px) {
-    footer .col_a {
-      width: 16%; } }
-  @media screen and (min-width: 960px) {
-    footer .col_a {
-      width: 15%; } }
-  footer .col_b {
-    width: 100%; }
-    @media screen and (min-width: 480px) {
-      footer .col_b {
-        width: 67%; } }
-    @media screen and (min-width: 960px) {
-      footer .col_b {
-        width: 67%; } }
-  footer .col_c {
-    width: 35%; }
-    @media screen and (min-width: 960px) {
-      footer .col_c {
-        width: 10%; } }
-  @media screen and (min-width: 480px) {
-    footer article {
-      display: inline-block; } }
-  footer article .header {
-    font-family: "Sansa Pro Bold", Verdana, Arial, sans-serif;
-    font-size: 0.91em;
-    color: #333;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    display: block;
-    width: 100%; }
-    @media screen and (min-width: 480px) {
-      footer article .header {
-        font-weight: 700; } }
-  footer article ul {
-    background-color: #fbeb2e;
-    margin: 0;
-    padding: 0px 0 30px 0;
-    list-style: none;
-    line-height: 130%;
-    font-weight: 400; }
-    footer article ul li {
-      height: auto;
-      margin-bottom: 10px; }
-      footer article ul li a {
-        color: #333;
-        text-decoration: none; }
-    @media screen and (min-width: 480px) {
-      footer article ul {
-        padding: 0px 0px 30px 0px; } }
-  footer .footer_menu {
-    width: 100%; }
-  footer .vacaciones_mar {
-    width: 100%; }
-    @media screen and (min-width: 480px) {
-      footer .vacaciones_mar {
-        display: inline-block;
-        width: 33%;
-        vertical-align: top; } }
-    @media screen and (min-width: 960px) {
-      footer .vacaciones_mar {
-        width: 29%; } }
-  footer .vacaciones_rutas {
-    display: none; }
-    @media screen and (min-width: 480px) {
-      footer .vacaciones_rutas {
-        display: inline-block;
-        width: 33%;
-        vertical-align: top; } }
-    @media screen and (min-width: 960px) {
-      footer .vacaciones_rutas {
-        width: 29%; } }
-  footer .social {
-    margin-bottom: 30px; }
-    footer .social a {
-      color: #333;
-      text-decoration: none; }
-    @media screen and (min-width: 480px) {
-      footer .social {
-        margin-bottom: 80px;
-        vertical-align: top; } }
-    @media screen and (min-width: 960px) {
-      footer .social {
-        margin-bottom: 105px; } }
-  footer .vacaciones_montana {
-    display: none; }
-    @media screen and (min-width: 480px) {
-      footer .vacaciones_montana {
-        display: inline-block;
-        width: 32%; } }
-  footer .contact {
-    display: none; }
-    @media screen and (min-width: 480px) {
-      footer .contact {
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-        right: 30px; } }
-    @media screen and (min-width: 960px) {
-      footer .contact {
-        bottom: 20px;
-        left: 47%;
-        right: initial; } }
-    @media screen and (min-width: 1200px) {
-      footer .contact {
-        left: 47%;
-        right: initial; } }
+    .columns_inner_wrapper {
+      max-width: 920px;
+      margin: 0 auto;
+      text-align: left; } }
+
+.col_a {
+  width: 100%; }
+  @media (min-width: 480px) and (max-width: 959px) {
+    .col_a {
+      padding-left: 30px;
+      width: 25%; } }
+  @media (min-width: 960px) {
+    .col_a {
+      padding-left: 0px;
+      width: 25%; } }
+
+.col_b {
+  display: none; }
+  @media (min-width: 480px) and (max-width: 959px) {
+    .col_b {
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap; } }
+  @media (min-width: 960px) {
+    .col_b {
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap; } }
+
+@media (min-width: 480px) and (max-width: 959px) {
+  .sea_holidays {
+    width: 50%; } }
+
+@media (min-width: 960px) {
+  .sea_holidays {
+    width: 33%; } }
+
+@media (min-width: 480px) and (max-width: 959px) {
+  .mountain_holidays {
+    width: 50%; } }
+
+@media (min-width: 960px) {
+  .mountain_holidays {
+    width: 33%; } }
+
+@media (min-width: 480px) and (max-width: 959px) {
+  .routes_holidays {
+    width: 100%; } }
+
+@media (min-width: 960px) {
+  .routes_holidays {
+    width: 33%; } }
+
+.social li {
+  display: inline-block; }
+
+@media (min-width: 480px) and (max-width: 959px) {
+  .social {
+    width: 50%; } }
+
+@media (min-width: 960px) {
+  .social {
+    width: 33%; } }
+
+@media (min-width: 480px) and (max-width: 959px) {
+  .contact {
+    width: 50%; } }
+
+@media (min-width: 960px) {
+  .contact {
+    width: 66%; } }
+
+.footer_logo {
+  width: 170px;
+  height: auto;
+  position: absolute;
+  top: -40px;
+  left: 20%; }
+  @media (min-width: 480px) and (max-width: 959px) {
+    .footer_logo {
+      left: 20px;
+      width: 175px;
+      top: -70px; } }
+  @media (min-width: 960px) {
+    .footer_logo {
+      left: -20px;
+      top: -110px; } }

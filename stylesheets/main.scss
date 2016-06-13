@@ -9,13 +9,9 @@ ul{
 
 body{
   margin: 0;
-  font-size: 13px;
-  @media screen and (min-width: $tablet){
-    font-size: 13px;
-  }
-  @media (min-width:$desktop){
+  font-size: 12px;
+  @include media-desktop {
     background-color: $gray;
-    font-size: 14px;
 }
 
 //GENERAL WRAPPERS
@@ -77,13 +73,12 @@ header{
   h2{
     display: none;
     font-family: $font-fords-folly;
-    font-size: $title-font-size;
+    font-size: $big-font-size;
     color: $white;
     padding-top: 30px;
     margin-top: 5px;
     @include media-desktop {
       display: inline-block;
-      font-size: $subtitle-font-size;
       color: $red;
       padding-left: 300px;
       padding-top: 24px;
@@ -111,14 +106,14 @@ header{
 //HEADER IMAGE
 //************
 .main_image{
+  position: relative;
   background-image:  url('../img/sunweb-wave.svg'), url('../img/header_mobile.jpg');
   background-repeat: no-repeat;
-  background-position: bottom 60px left, top right -20px;
+  background-position: bottom 49px left, top right -20px;
   background-size: 100% auto, auto 100%;
   height: 275px;
-  position: relative;
-  @media (min-width:450px) and (max-width:$tablet){
-    background-position: bottom 60px left, top right;
+  @include media-big-mobile {
+    background-position: bottom 49px left, top right;
     background-size: 100% auto, 100% auto;
   }
   @include media-tablet {
@@ -128,14 +123,14 @@ header{
     background-size: 100% auto, auto 100%;
     height: 384px;
   }
-  @media (min-width:800px) and (max-width:$desktop){
+  @include media-big-tablet {
     background-position: bottom 0px left, bottom 30px right;
     background-size: 100% auto, 100%;
   }
-  @include media-desktop{
-    height: 425px;
+  @include media-desktop {
     background-position: bottom 0px left, bottom 34px right;
     background-image:  url('../img/wave-desk.png'), url('../img/header_desktop.jpg');
+    height: 425px;
   }
   h1{
     display: block;
@@ -143,20 +138,22 @@ header{
     bottom:0;
     width: 100%;
     margin: 0;
-    text-align: center;
     background-color: $yellow;
     color: $black;
     font-family: $font-pacifico;
-    font-size: $title-font-size;
+    font-size: $title-font-size-mobile;
+    text-align: center;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.8);
+    line-height: 130%;
     padding-top: 6px;
     padding-bottom: 15px;
-    @media screen and (min-width:$tablet){
+    @include media-tablet {
+      background-color: none;
       position: absolute;
       top: 50px;
       left: 10px;
       background-color: initial;
-      font-size: $uverbig-font-size;
+      font-size: $title-font-size-tablet;
       width: 350px;
       text-align: right;
       line-height: 130%;
@@ -166,8 +163,18 @@ header{
         display: inline-block;
       }
     }
-    @media screen and (min-width:$desktop){
+    @include media-desktop {
+      background-color: initial;
+      font-size: $title-font-size-desk;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      width: 40%;
       text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.8);
+      & > span{
+        margin-left:110px;
+        display: inline-block;
+      }
     }
   }
 }
@@ -189,7 +196,7 @@ header{
   }
   h3{
     font-family: $font-sansa-pro;
-    font-size: $header-font-size;
+    font-size: $big-font-size;
     margin-top: 20px;
     @include media-desktop {
       margin-top: 0px;
@@ -198,13 +205,13 @@ header{
   }
   .copy{
     font-family: $font-sansa-pro;
-    font-size: $subtitle-font-size;
+    font-size: $normal-font-size;
     font-weight: 700;
     color: $red;
   }
   p{
     font-family: "Verdana", sans-serif;
-    font-size: $bigger-font-size;
+    font-size: $smaller-font-size;
     line-height: 150%;
     padding: 0 15px;
     @include media-desktop {
@@ -218,7 +225,7 @@ header{
   }
   .button{
     font-family: $font-sansa-pro;
-    font-size: $bigger-font-size;
+    font-size: $normal-font-size;
     font-weight: 700;
     color: $white;
     text-transform: uppercase;
@@ -228,7 +235,7 @@ header{
     border-radius: 10px;
     margin: 50px auto;
     display: block;
-    width: 190px;
+    width: 200px;
     padding: 10px 15px;
   }
 }
@@ -240,11 +247,11 @@ header{
   text-align: center;
   position: relative;
   padding-top: 110px;
-  @media (min-width:$tablet){
+  @include media-tablet {
     text-align: left;
     padding-top: 150px;
   }
-  @media (min-width:$desktop){
+  @include media-desktop {
     padding-top: 170px;
   }
 }
@@ -269,8 +276,8 @@ header{
 }
 .weave{
   font-family: $font-fords-folly;
-  color: $red;
   text-align: center;
+  color: $red;
   background-color: $gray;
 }
 //***************
@@ -290,22 +297,30 @@ header{
     margin-top: -180px;
   }
   @include media-desktop {
-
+    background-size: 100% auto;
   }
   h2{
     top: 120px;
     position: absolute;
     width: 100%;
     text-align: center;
+    font-size: $bigger-font-size;
     @include media-tablet {
       top: 20px;
       text-align: center;
       width: 100%;
     }
+    @include media-big-tablet {
+      top: 40%;
+      text-align: center;
+      right: 10%;
+      width: initial;
+    }
     @include media-desktop {
       top: 0px;
       text-align: center;
-      width: 100%;
+      width: initial;
+      left: 40%;
     }
   }
 }
