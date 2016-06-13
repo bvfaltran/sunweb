@@ -47,7 +47,21 @@ gulp.task('bundleFonts6', function () {
     .pipe(gulp.dest(fontsTarget))
 });
 
+gulp.task('jquery', function () {
+  return gulp
+    .src('./bower_components/jquery/dist/jquery.min.js')
+    .pipe(gulp.dest('./public/js'))
+});
+gulp.task('prefixfree', function () {
+  return gulp
+    .src('./bower_components/prefixfree/prefixfree.min.js')
+    .pipe(gulp.dest('./public/js'))
+});
+
 gulp.task('bundleFonts', ['bundleFonts1', 'bundleFonts2', 'bundleFonts3', 'bundleFonts4', 'bundleFonts5', 'bundleFonts6']);
+gulp.task('bundleJs', ['jquery', 'prefixfree']);
+gulp.task('bundleAll', ['bundleJs', 'bundleFonts']);
+
 
 gulp.task('default', function () {
   return gulp
