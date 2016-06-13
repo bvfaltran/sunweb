@@ -14,9 +14,7 @@ Pixel perfect result
 Bonus points
 
 Use HTML5 document[x]
-
 Use HTML5 elements properly[x]
-
 Minimized number of DOM elements[x]
 
 Make your HTML complaint with W3C criteria[x]
