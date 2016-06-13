@@ -32,16 +32,16 @@ header{
   //**********************
   & nav{
     height: 108px;
-    background:-webkit-linear-gradient(#FFF 0px, #FFF 81px, #ed1c2e 81px, #ed1c2e 87px, #FFF 87px, #FFF 94px, #f99500 94px, #f99500 99px, #FFF 99px, #FFF 103px, #20a0de 103px, #20a0de 108px);
+    background:linear-gradient(#FFF 0px, #FFF 81px, #ed1c2e 81px, #ed1c2e 87px, #FFF 87px, #FFF 94px, #f99500 94px, #f99500 99px, #FFF 99px, #FFF 103px, #20a0de 103px, #20a0de 108px);
     z-index: 1;
     position: relative;
     @include media-tablet {
         height: 81px;
-        background:-webkit-linear-gradient(#FFF 0px, #FFF 66px, #ed1c2e 66px, #ed1c2e 69px, #FFF 69px, #FFF 73px, #f99500 73px, #f99500 76px, #FFF 76px, #FFF 79px, #20a0de 79px, #20a0de 82px);
+        background:linear-gradient(#FFF 0px, #FFF 66px, #ed1c2e 66px, #ed1c2e 69px, #FFF 69px, #FFF 73px, #f99500 73px, #f99500 76px, #FFF 76px, #FFF 79px, #20a0de 79px, #20a0de 82px);
     }
     @include media-desktop {
         height: 81px;
-        background:-webkit-linear-gradient(#FFF 0px, #FFF 66px, #ed1c2e 66px, #ed1c2e 69px, #FFF 69px, #FFF 73px, #f99500 73px, #f99500 76px, #FFF 76px, #FFF 79px, #20a0de 79px, #20a0de 82px);
+        background:linear-gradient(#FFF 0px, #FFF 66px, #ed1c2e 66px, #ed1c2e 69px, #FFF 69px, #FFF 73px, #f99500 73px, #f99500 76px, #FFF 76px, #FFF 79px, #20a0de 79px, #20a0de 82px);
     }
   }
   .logo {
@@ -186,11 +186,11 @@ header{
   text-align: center;
   width: 100%;
   padding-bottom: 30px;
-  margin-bottom: 170px;
+  margin-bottom: 0px;
   @include media-desktop {
     max-width: 1400px;
     margin: 0 auto;
-    margin-bottom: 190px;
+    margin-bottom: 80px;
     background-color: $white;
     padding-bottom: 30px;
   }
